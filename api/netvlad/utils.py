@@ -38,3 +38,6 @@ def extract_netvlad_descriptor(image_path):
 
     return descriptor.cpu().numpy()
 
+def generate_netvlad_descriptors():
+    pass
+
