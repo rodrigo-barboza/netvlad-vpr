@@ -3,7 +3,7 @@ import torch.nn as nn
 import torchvision.models as models
 import torchvision.transforms as transforms
 from PIL import Image
-from netvlad import NetVLAD
+from netvlad.NetVLAD import NetVLAD
 
 # Carregar o modelo base (exemplo: ResNet-18)
 def get_base_cnn_model():
@@ -37,3 +37,4 @@ def extract_netvlad_descriptor(image_path):
         descriptor = netvlad(features)
 
     return descriptor.cpu().numpy()
+
