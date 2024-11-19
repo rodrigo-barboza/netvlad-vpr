@@ -137,4 +137,5 @@ def save_image_descriptor(query_image_path, descriptor):
 
 if __name__ == '__main__':
     init_db()
+    # describe_dataset_images() # descomentar para gerar descritores do dataset
     app.run(debug=True)
